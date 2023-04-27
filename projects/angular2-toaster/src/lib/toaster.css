@@ -1,4 +1,4 @@
-.toast {
+.ang2-toast {
   display: flex;
   flex-direction: row;
   align-content: center;
@@ -69,7 +69,8 @@
 .toast-message {
   word-wrap: break-word;
 }
-.toast-message a, .toast-message label {
+.toast-message a,
+.toast-message label {
   color: #ffffff;
 }
 .toast-message a:hover {
@@ -77,7 +78,8 @@
   text-decoration: none;
 }
 
-.toast-close-button, button.toast-close-button {
+.toast-close-button,
+button.toast-close-button {
   align-self: flex-start;
   padding: 3px;
   font-size: 23px;
@@ -91,7 +93,8 @@
   background: transparent;
   border: 0;
 }
-.toast-close-button:hover, .toast-close-button:focus {
+.toast-close-button:hover,
+.toast-close-button:focus {
   color: #000000;
   text-decoration: none;
   cursor: pointer;
@@ -116,42 +119,42 @@
 /*Additional properties for button version
  iOS requires the button element instead of an anchor tag.
  If you want the anchor version, it requires `href="#"`.*/
-.toast-container {
+.ang2-toast-container {
   position: fixed;
   z-index: 999999;
   /*overrides*/
   pointer-events: auto;
 }
 
-.toast-container.toast-center,
-.toast-container.toast-top-center,
-.toast-container.toast-bottom-center {
+.ang2-toast-container.toast-center,
+.ang2-toast-container.toast-top-center,
+.ang2-toast-container.toast-bottom-center {
   width: 100%;
   pointer-events: none;
   left: 0;
   right: 0;
 }
 
-.toast-container.toast-center > div,
-.toast-container.toast-top-center > div,
-.toast-container.toast-bottom-center > div {
+.ang2-toast-container.toast-center > div,
+.ang2-toast-container.toast-top-center > div,
+.ang2-toast-container.toast-bottom-center > div {
   margin: 6px auto;
   pointer-events: auto;
 }
 
-.toast-container.toast-center > button,
-.toast-container.toast-top-center > button,
-.toast-container.toast-bottom-center > button {
+.ang2-toast-container.toast-center > button,
+.ang2-toast-container.toast-top-center > button,
+.ang2-toast-container.toast-bottom-center > button {
   pointer-events: auto;
 }
 
-.toast-container * {
+.ang2-toast-container * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-.toast-container > div {
+.ang2-toast-container > div {
   margin: 0 0 6px;
   width: 300px;
   border-radius: 3px 3px 3px 3px;
@@ -162,14 +165,14 @@
   opacity: 0.8;
 }
 
-.toast-container > :hover {
+.ang2-toast-container > :hover {
   box-shadow: 0 0 12px #000000;
   opacity: 1;
   cursor: pointer;
 }
 
-.toast-container.toast-top-full-width > div,
-.toast-container.toast-bottom-full-width > div {
+.ang2-toast-container.toast-top-full-width > div,
+.ang2-toast-container.toast-bottom-full-width > div {
   width: 96%;
   margin: auto;
 }
